@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "python-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Linden <l.dalegandar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+colorama = "^0.4.6"
+polars = "^0.19.2"
+matplotlib = "^3.7.2"
+boto3 = "^1.28.40"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+pre-commit = "^3.4.0"
+ruff = "^0.0.287"
+
+# --------------------------------------------------------------------------- #
+
+[tool.ruff]
+ignore = [
+    "E501" # ignore these errors - Black should handle them
+]
+
+# --------------------------------------------------------------------------- #
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
