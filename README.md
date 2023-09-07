@@ -2,64 +2,66 @@
 
 ## Project Structure
 
-```toml
-
+```bash
 /projects
-├─ 'folder to contain all project-specific files/scripts'
-|
-└─ [project folders]
-├─ src
-|   ├─ [project files]
-|   └─ [project files]
-|
-├─ tests
-|   ├─ [project tests]
-|   └─ [project tests]
-|
-├─ .env
-|   └─ 'project specific env variables'
-|
-└─ main.py
-└─ 'main entry point for the project'
+    ├─ 'folder to contain all project-specific files/scripts'
+    |
+    └─ [project folders]
+        ├─ src
+        |   ├─ [project files]
+        |   └─ [project files]
+        |
+        ├─ tests
+        |   ├─ [project tests]
+        |   └─ [project tests]
+        |
+        ├─ .env
+        |   └─ 'project specific env variables'
+        |
+        └─ main.py
+            └─ 'main entry point for the project'
+
 
 /lib
-├─ 'libraries that are tied to a specific (external) dependency (e.g. AWS)'
-|
-└─ aws
-├─ 'AWS-specific functions wrapping around the boto3 library'
-├─ cognito
-|   └─ 'user management functions for interacting with AWS Cognito'
-├─ dynamodb
-└─ 'database functions for interacting with AWS DynamoDB'
-└─ s3
-└─ 'file storage functions for interacting with AWS S3'
+    ├─ 'libraries that are tied to a specific (external) dependency (e.g. AWS)'
+    |
+    └─ aws
+        ├─ 'AWS-specific functions wrapping around the boto3 library'
+        ├─ cognito
+        |   └─ 'user management functions for interacting with AWS Cognito'
+        ├─ dynamodb
+        |   └─ 'database functions for interacting with AWS DynamoDB'
+        └─ s3
+            └─ 'file storage functions for interacting with AWS S3'
+
 
 /shared
-├─ 'shared generic libraries that can be used across projects'
-|
-├─ config
-|   └─ 'shared configuration settings, e.g. for env variables and data paths'
-|
-├─ logging
-|   └─ 'generic logging utility library that can be used in place of `print`'
-|
-└─ utils
-├─ 'generic functions to e.g. safely get dict attributes'
-├─ date
-|    └─ 'utility functions to e.g. calc the difference between dates'
-├─ sanitize
-|    └─ 'utility functions to remove unwanted characters from strings for e.g. filenames etc'
-└─ timestamp
-└─ 'utility functions to generate timestamps in various formats'
+    ├─ 'shared generic libraries that can be used across projects'
+    |
+    ├─ config
+    |   └─ 'shared configuration settings, e.g. for env variables and data paths'
+    |
+    ├─ logging
+    |   └─ 'generic logging utility library that can be used in place of `print`'
+    |
+    └─ utils
+        ├─ 'generic functions to e.g. safely get dict attributes'
+        ├─ date
+        |   └─ 'utility functions to e.g. calc the difference between dates'
+        ├─ sanitize
+        |   └─ 'utility functions to remove unwanted characters from strings for e.g. filenames etc'
+        └─ timestamp
+            └─ 'utility functions to generate timestamps in various formats'
+
 
 .env.shared
-└─ 'shared env variables across all projects'
+    └─ 'shared env variables across all projects'
 
 .pre-commit-config.yaml
-└─ 'configuration options for the pre-commit hooks'
+    └─ 'configuration options for the pre-commit hooks'
 
 pyproject.toml
-└─ 'poetry (project dependencies) configuration file'
+    └─ 'poetry (project dependencies) configuration file'
 
 ```
 
