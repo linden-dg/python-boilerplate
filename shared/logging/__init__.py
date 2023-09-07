@@ -1,6 +1,6 @@
 import logging
 from colorama import init, Fore, Style
-from config import config
+from shared.config import config
 
 init(autoreset=True)
 SUCCESS_LOG_LEVEL = 25

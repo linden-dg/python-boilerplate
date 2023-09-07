@@ -2,7 +2,7 @@ from typing import TypedDict
 
 import boto3
 
-from config import config
+from shared.config import config
 from shared.utils import get_attr
 
 

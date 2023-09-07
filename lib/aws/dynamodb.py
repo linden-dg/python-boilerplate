@@ -1,7 +1,7 @@
 import boto3
 from boto3.dynamodb.types import TypeDeserializer
 
-from config import config
+from shared.config import config
 from shared.logging import getLogger
 
 log = getLogger(__name__)

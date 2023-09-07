@@ -2,7 +2,7 @@ from typing import TypedDict
 
 import boto3
 
-from config import config
+from shared.config import config
 from shared.logging import getLogger
 from shared.utils import create_dir_if_not_exist
 from shared.utils.sanitize import sanitize_folder_path, sanitize_filename
